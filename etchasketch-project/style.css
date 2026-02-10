@@ -1,0 +1,25 @@
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonContainer{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.square {
+    width: 6.25%;     /* 100% / 16 = 6.25% */
+    aspect-ratio: 1 / 1;  /* keeps it square without needing height */
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.newColor {
+  background-color: blue;
+}
+
+
+

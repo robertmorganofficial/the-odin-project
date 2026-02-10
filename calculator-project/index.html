@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calc-wrap">
+        <div class="calcbody">
+            <div class="display_container">
+                <input class="display" id="display" readonly>
+            </div>
+                <div class="functions">
+                    <div class="function-button">
+                        <button onclick="pressACClear()" class="rounded-button" id="clear-button">AC</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="DEL()" class="rounded-button">DEL</button>
+                </div>
+
+                <div class="function-button">
+                        <button class="rounded-button">%</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('/')" class="rounded-button orange">/</button>
+                </div>
+            </div>
+
+            <div class="functions-two">
+                    <div class="function-button">
+                        <button onclick="addToDisplay('7')" class="rounded-button grey" id="seven">7</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('8')" class="rounded-button grey">8</button>
+                </div>
+
+                <div class="function-button">
+                        <button onclick="addToDisplay('9')" class="rounded-button grey">9</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('*')" class="rounded-button orange">*</button>
+                </div>
+            </div>
+
+            <div class="functions-three">
+                    <div class="function-button">
+                        <button onclick="addToDisplay('4')" class="rounded-button grey">4</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('5')" class="rounded-button grey">5</button>
+                </div>
+
+                <div class="function-button">
+                        <button onclick="addToDisplay('6')" class="rounded-button grey">6</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('-')" class="rounded-button orange">-</button>
+                </div>
+            </div>
+
+            <div class="functions-four">
+                    <div class="function-button">
+                        <button onclick="addToDisplay('1')" class="rounded-button grey">1</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('2')" class="rounded-button grey">2</button>
+                </div>
+
+                <div class="function-button">
+                        <button onclick="addToDisplay('3')" class="rounded-button grey">3</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('+')" class="rounded-button orange">+</button>
+                </div>
+            </div>
+
+            <div class="functions-five">
+                    <div class="function-button">
+                        <button onclick="addToDisplay('0')" class="pill-button grey" id="oval">0</button>
+                    </div>
+
+                <div class="function-button">
+                    <button onclick="addToDisplay('.')" class="rounded-button grey">.</button>
+                </div>
+
+                <div class="function-button">
+                        <button onclick="calculate()" class="rounded-button orange" id="equals-button">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="script.js"></script>    
+</body>
+</html>

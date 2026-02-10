@@ -1,0 +1,122 @@
+body, html {
+  height: 100vh;
+  margin: 0;
+}
+
+.calc-wrap{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calcbody{
+    width: 30rem;
+    height: 45rem;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 10px;
+}
+
+.display{
+    text-align: right;
+    font-size: 35px;
+    padding: 35px;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Roboto', sans-serif;
+    width: 410px;
+    height: 55px;
+}
+
+.functions{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    padding-top: 40px;
+
+}
+
+.functions-two{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+}
+
+.functions-three{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+}
+
+.functions-four{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+}
+
+.functions-five{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+}
+
+.rounded-button{
+    width: 80px;
+    height: 80px;
+    background-color: lightgrey;
+    color: balck;
+    cursor: pointer;
+    border-radius: 50%;
+    border-style: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+}
+
+.rounded-button.orange{
+    background-color: orange;
+    color: white;
+}
+
+.rounded-button.grey{
+    background-color: grey;
+    color: white;
+}
+
+.pill-button.grey{
+    background-color: grey;
+    color: white;
+    border-radius: 999px;
+    padding: 20px 90px; 
+    cursor: pointer; 
+    border: none;
+    height: 80px;
+}
+
+.pill-button {
+    font-size: 23px;
+}
+
+
+.functions p{
+    font-size: 50px;
+    margin: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+.rounded-button:hover,
+.pill-button.grey:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    transition: filter 0.2s, box-shadow 0.2s;
+}

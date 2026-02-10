@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Pixel";
+  src: url("./fonts/Pixellari.ttf")
+}
+@font-face {
+  font-family: "PressStart";
+  src: url("./fonts/PressStart2P-Regular.ttf")
+}
+
+body {
+  background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
+  background-size: 200% 200%;
+  animation: moveGradient 10s linear infinite;
+  color: white;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.header{
+    padding-bottom: 20px;
+}
+.header_title{
+    text-align: center;
+    font-family: Pixel;
+    font-size: 5rem;
+}
+
+.bestoffive{
+    text-align: center;
+}
+
+.weapon_title{
+    text-align: center;
+    padding: 20px;
+    font-family: PressStart;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.button {
+    height: 200px;
+    width: 200px;
+    border-color: white;
+}
+
+#outcome{
+    padding-top: 50px;
+    font-family: PressStart;
+}
+
+.button{
+    border-radius: 20px;
+}
+
+.score{
+    font-family: PressStart;
+}
+
+#rock{
+    background-color: #D62828;
+}
+
+#paper{
+    background-color: #003049;
+}
+
+#scissors{
+    background-color: #FCBF49;
+}
+
